@@ -6,7 +6,7 @@ const AdminRoute = ({children}) => {
   const user = useSelector((state) => state.auth.currentUser);
 
   if (!user || user.role !== "admin") {
-    return <Navigate to="/dashboard" replace/>;
+    return <Navigate to="/user-dashboard" replace/>;
   }
 
   return children;

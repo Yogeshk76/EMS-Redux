@@ -27,8 +27,8 @@ const Login = () => {
       return;
     }
 
-    dispatch(login(existingUser)); 
-    navigate(existingUser.role === "admin" ? "/admin" : "/dashboard");
+    dispatch(login(existingUser));
+    navigate(existingUser.role === "admin" ? "/admin-dashboard" : "/user-dashboard");
     setUsername("");
   };
 
