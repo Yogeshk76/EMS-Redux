@@ -4,7 +4,7 @@ import { logout } from '../features/auth/authSlice';
 import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
-  const user = useSelector((state) => state.auth.user);
+  const user = useSelector((state) => state.auth.currentUser);
   const dispatch = useDispatch();
   const navigate = useNavigate();
 

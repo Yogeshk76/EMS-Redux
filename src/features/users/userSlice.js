@@ -1,11 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, current } from "@reduxjs/toolkit";
 
 const initialState = {
   users: [
     { name: "admin", role: "admin" },
     { name: "alice", role: "user" },
     { name: "bob", role: "user" }
-  ]
+  ],
 };
 
 const userSlice = createSlice({
